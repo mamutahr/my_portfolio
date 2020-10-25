@@ -69,7 +69,7 @@
         <div class="subheading mb-5">(313) 377-8335 ·
           <a href="mailto:mamutahr@umich.edu">mamutahr@umich.edu</a>
         </div>
-        <p class="lead mb-5">I am a junior at the University of Michigan College of Engineering studying Computer Science with experience in scripting, object oriented programming, and web development. </p>
+        <p class="lead mb-5">I am a Senior at the University of Michigan College of Engineering studying Computer Science with experience in scripting, object oriented programming, and web development. </p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/moustafa-mutahr/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
@@ -93,13 +93,15 @@
             <li class="list-inline-item">Java</li>
             <li class="list-inline-item">SQL</li>
             <li class="list-inline-item">Matlab</li>
-            <li class="list-inline-item">Git</li>
             <li class="list-inline-item">Arduino</li>
             <li class="list-inline-item">HTML5</li>
             <li class="list-inline-item">CSS3</li>
             <li class="list-inline-item">JavaScript</li>
             <li class="list-inline-item">React</li>
+            <li class="list-inline-item">Next.JS</li>
             <li class="list-inline-item">Bootstrap 4</li>
+            <li class="list-inline-item">Python</li>
+            <li class="list-inline-item">Flask</li>
           </ul>
           <div class="subheading mb-3">Environments</div>
           <ul class="list-inline">
@@ -109,6 +111,11 @@
               <li class="list-inline-item">Bash</li>
               <li class="list-inline-item">Vim</li>
               <li class="list-inline-item">Visual Studio/Studio code</li>
+              <li class="list-inline-item">AWS</li>
+              <li class="list-inline-item">Docker</li>
+              <li class="list-inline-item">Git</li>
+              <li class="list-inline-item">Jira</li>
+              <li class="list-inline-item">Agile</li>
             </ul>
         </div>
     </section>
@@ -121,14 +128,33 @@
   
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-              <h3 class="mb-0">Research Assistant</h3>
-              <div class="subheading mb-3">Gliske Lab</div>
-              <p>
-                Using Matlab I developed software to analyze EEG records to find the relationship between sleep state and bio-markers for epilepsy. This was done by creating neural networks, boosted trees, finding d̃ values, and using the integral of ROC curves.
-              </p>
+              <h3 class="mb-0">Software Engineer Intern</h3>
+              <div class="subheading mb-3">Vroom</div>
+              <ul>
+                <li>Developed a fully functioning web app to track and manage all of Vroom’s A/B tests. </li>
+                <li>Technologies include using CircleCI and Docker for deployment, Okta for employee authentication, as well as NextJS and TypeScript for cleaner, safer, and more scalable code.</li>
+                <li>Also applied MVVM to separate business logic and UI for more efficient future development.</li>
+                <li>This was done fully remote as a solo Front-End Developer with Vroom’s first intern feature team.</li>
+                <li>Utilized Agile development including all ceremonies and used Jira for ticket management.</li>
+              </ul>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">November 2017 - Present</span>
+              <span class="text-primary">June 2020 - August 2020</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">Research Assistant</h3>
+              <div class="subheading mb-3">Gliske Lab</div>
+              <ul>
+                <li>Increased success rate of brain tissue removal procedures by removing sleep as a confounding variable using statistical methods in MATLAB</li>
+                <li>Established a more efficient way to assess the differentiability between datasets</li>
+                <li>Paper submitted based on my work by Dr. Stephen Gliske to ICASSP </li>
+              </ul>             
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">November 2017 - May 2020</span>
             </div>
           </div>
   
@@ -183,15 +209,46 @@
             <h2 class="mb-5">Projects</h2>
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="resume-content">
+
                   <h3 class="mb-0">C++</h3>
-                  <div class="subheading mt-3">S(illy)QL</div>
-                  <p>Created a basic relational database based on a subset of a standard query language using C++.
-                      This allowed the user to create, join, and delete tables as well as insert and remove entries from the tables.
-                      It also featured hash table or binary search tree index generation to make these operations more efficient.
-                  </p>
-                  <h3 class="mb-0">SQL</h3>
-                  <div class="subheading mt-3">FakeBook</div>
-                  <p>Using SQL to design a relational database to store information from the fictional social media platform Fakebook. This was done by writing SQL queries to create tables, triggers, and views.</p>
+                  <div class="subheading mt-3">System Design of a Search Engine</div>
+                  <ul>
+                    <li>Designed a search engine in C++ from scratch on a team of 6 students totaling ~8600 Lines of Code</li>
+                    <li>Managed a multi-threaded web crawler capable of downloading ~100,000 web pages/hour</li>
+                    <li>Generated an inverted word index of approximately 12M webpages</li>
+                    <li>Saved the above index into files as serialized data structures allowing memory mapped searches</li>
+                    <li>Developed a multi-threaded HTTP server and front-end providing a Google-like interface</li>
+                  </ul>
+
+                  <div class="subheading mt-3">Threading Library</div>
+                  <ul>
+                    <li>Implemented a threading library that supports simulated multiprocessor systems using C++</li>
+                    <li>Library includes thread, mutex, and cv implementations and was given a CPU implementation to manage cpu_interrupts and initialization</li>
+                  </ul>
+
+                  <div class="subheading mt-3">Video Streaming via CDN</div>
+                  <ul>
+                    <li>Implemented adaptive bitrate selection, DNS load balancing, and an HTTP proxy sever to stream video at high bit rates from the closest server to a given client using C++</li>
+                  </ul>
+
+                  <h3 class="mb-0">Web Development</h3>
+                  <div class="subheading mt-3">Insta485</div>
+                  <ul>
+                    <li>A full-stack web application that uses Flask, React, SQLite3, HTML5, and CSS3</li>
+                    <li>A Client-Side Dynamic page that mimics the social media site Instagram</li>
+                  </ul>
+                  <div class="subheading mt-3"> Meal Runner</div>
+                  <ul>
+                    <li>A Server-Side Dynamic web application that uses Flask SQlite3 HTML5 and CSS3</li>
+                    <li>Ride sharing app that aimed to reduce food waste by connecting distribution centers, food availability, and drivers</li>
+                    <li>Made in conjunction with one other student during a 36 hour hackathon event</li>
+                  </ul>
+                  <div class="subheading mt-3">Corona-Tracker</div>
+                  <ul>
+                    <li>Contributed to an open-source project that aims to reduce the number of unnecessary hospital visits</li>
+                    <li>Built with React and Material UI for a clean and consistent web application</li>
+                  </ul>
+                 
                   <h3 class="mb-0">Android Development</h3>
                   <div class="subheading mt-3">Blade Escape</div>
                   <p>Designed and developed a 2D Android Game using LibGDX and Android Studio for Java based mobile platforms</p>
@@ -218,7 +275,7 @@
               <h3 class="mb-0">University of Michigan College of Engineering</h3>
               <div class="subheading mb-3">Bachelor of Science</div>
               <div>Computer Science</div>
-              <p>GPA: 3.41 | 4</p>
+              <p>GPA: 3.51 | 4</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">September 2017 - May 2021</span>
@@ -244,6 +301,9 @@
       <div class="w-100">
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Dean's List - University of Michigan</li>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
             Regional Finalist for FIRST Robotics</li>
